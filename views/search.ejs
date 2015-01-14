@@ -1,0 +1,38 @@
+<%- include header %>
+ <% if (success) { %>
+        <div class="alert alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= success %></div>
+        <% } %>
+        <% if (error) { %>
+        <div class="alert alert-error">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= error %></div>
+        <% } %>
+
+<div class="row-fluid">
+<section class="span9">
+ <div class="alert alert-success">
+           <h3 style=""><span>total：</span><%= posts.length %></h3>
+          </div>
+   
+    <% posts.forEach(function(post, index){ %>
+        <article  style="margin-bottom: 20px">
+            <h2  id='title'><%= post.title %>
+            </h2>
+            <p> 日期： <a><%= post.time.day %></a>
+            作者： <a><%= post.username %></a>
+                
+             </p>
+            <p ><%- post.post %></p>
+             <p ><a class="btn" href="post/<%= post.username %>/<%= post.time.day %>/<%= post.title %>">阅读此文</a></p>
+        </article>
+    <% }) %>
+
+
+</section>
+
+</div>
+
+
+<%- include footer %>

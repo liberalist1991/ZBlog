@@ -1,0 +1,16 @@
+
+<%- include header %>
+
+<% tags.forEach(function(archive, index){ %>
+<section class=""  id="<%= archive._id %>">
+  <h5 ><%= archive._id %></h5>
+  <ul class="nav nav-list">
+  <% archive.title.forEach(function(t, i){ %>
+    <li><span class="pull-right"><%= archive.day[i] %></span> <a href="/post/<%= t %>"><%= t %></a></li>
+    <% }) %>
+  </ul>
+  </section>
+<% }) %>
+
+</section>
+<%- include footer %>

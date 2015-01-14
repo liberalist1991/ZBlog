@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css"></head>
+    <link rel="stylesheet" href="/stylesheets/style.css"></head>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"></head>
+    <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css">
+
+
+    </head>
+<body>
+
+    <header></header>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Zhan's Blog</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+             
+              <li class="">
+                <form id="searchForm" class="navbar-form pull-left"  action="search" method="get">
+                  <input type="text" name="keyword" class="span4" placeholder="title">
+                  <button type="submit" class="btn">搜索</button>
+                </form>
+              </li>
+               <li class="">
+           
+              </li>
+             <li class="active">
+                <a href="/">首页</a>
+              </li>
+              <li class="">
+                <a href="/archive">存档</a>
+              </li>
+              <li class="">
+                <a href="/categories">目录</a>
+              </li>
+              <li class="">
+                <a href="/tags">标签</a>
+              </li>
+              <li class="">
+                <a href="/about">关于</a>
+              </li>
+              
+      
+            </ul>
+            <ul class="nav pull-right">
+                  <li>
+                 <% if (user) { %>
+                    <a  href="logout">注销</a>
+                <% }else{%>
+                     <a  href="login">登录</a>
+                  <% }%>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div  class="container " id="container">

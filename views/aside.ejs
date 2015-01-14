@@ -1,0 +1,30 @@
+<aside class="span3">
+    <section>
+        <h3>Categories
+        </h3>
+        <ul class="nav nav-list">
+           <% categories.forEach(function(category, index){ %>
+              <a href="/categories/#<%= category %>"><li class="label label-info"  style="margin-left:2px; padding:2px 6px;"><%= category %></li> </a>
+            <% }) %>
+        </ul>
+    </section>
+
+     <section>
+        <h3>Tags
+        </h3>
+        <ul class="nav nav-list">
+           <% tags.forEach(function(tag, index){ %>
+              <a href="/tags/#<%= tag %>"><li class="label"  style="margin-left:2px; padding:2px 6px;"><%= tag %></li> </a>
+            <% }) %>
+        </ul>
+    </section>
+
+      <section>
+        <h3>Links
+        </h3>
+        <ul class="nav nav-list">
+            <li><a href="#">www.a.com</a></li>
+            <li><a href="#">www.b.com</a></li>
+        </ul>
+    </section>
+</aside>

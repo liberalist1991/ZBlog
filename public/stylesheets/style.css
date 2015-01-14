@@ -1,0 +1,30 @@
+#container{
+margin-top:55px; padding: 10px;border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC; box-shadow: 6px 3px 100px #888888;border-radius:6px;
+}
+
+h2#title{
+background:#E5E5E5;box-shadow: -4px -4px 15px #888888;border-radius: 2px;padding-left:10px
+}
+.maodian:target{
+	background:#D4D4D4;
+	box-shadow: 6px 3px 20px #888888;
+	border-radius: 2px;
+	padding-left: 2px;
+	z-index:9999;
+}
+
+.tag_category{
+	border-bottom: 1px dotted #CCCCCC;padding-bottom: 20px
+}
+
+.about section{
+	border-top:1px dotted #CFCFCF;
+	padding:20px;
+}
+.about section li{
+	margin-top: 5px;
+}
+
+.login form{
+	margin: 10%;
+}

@@ -1,0 +1,32 @@
+<!-- 编辑文章对话框-->
+<form action="editPost" method="post" id="editPostModel" class="modal hide fade form-horizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <a type="button" class="close" data-dismiss="modal" aria-hidden="true">×</a>
+    <h3 id="myModalLabel">编辑文章</h3>
+  </div>
+  <div class="modal-body " >
+   <div class="control-group ">
+     <label class="control-label" for="title">标题:</label>
+    <div class="controls">
+      <input type="text" id="title" name="title" placeholder="标题">
+    </div>
+  </div>
+     <center class="control-group" >
+ 
+   
+     标签:<input type="text" id="tags" name="tags" class="input-small" placeholder="标签">
+    
+      目录:<input type="text" id="categories" name="categories" class="input-small" placeholder="目录">
+    
+
+  </center>
+ 
+    <div class="row-fluid">
+        <textarea rows="12" class="span12" name="post" id="post" placeholder="content"></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a class="btn" data-dismiss="modal" aria-hidden="true">取消</a>
+    <button type="submit" class="btn btn-primary" >保存</button>
+  </div>
+</form>

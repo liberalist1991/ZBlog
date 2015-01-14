@@ -1,0 +1,23 @@
+
+<%- include header %>
+<section  class="tag_category">
+<h3>Tags:</h3>
+<% tags.forEach(function(tag, index){ %>
+ <a href="#<%= tag._id %>" class="label "  style="margin:5px 10px; padding:4px 10px;"><%= tag._id %></a>
+<% }) %>
+</section>
+<section>
+
+<% tags.forEach(function(tag, index){ %>
+<section class="maodian"  id="<%= tag._id %>">
+  <h5 ><%= tag._id %></h5>
+  <ul class="nav nav-list">
+  <% tag.title.forEach(function(t, i){ %>
+    <li><a href="/post/<%= t %>"><%= t %></a></li>
+    <% }) %>
+  </ul>
+  </section>
+<% }) %>
+
+</section>
+<%- include footer %>

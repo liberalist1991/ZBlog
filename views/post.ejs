@@ -1,0 +1,31 @@
+<%- include header %>
+ 
+ <article class="span9" style="margin-bottom: 20px">
+            <h2 style="background:#E5E5E5;box-shadow: -4px -4px 15px #888888;border-radius: 2px;padding-left:10px" ><%= post.title %>
+            </h2>
+            <p> 日期： <a><%= post.time.day %></a>
+            作者： <a><%= post.username %></a>
+                 
+             </p>
+            <p ><%- post.post %></p>
+            
+</article>
+<aside class="span2">
+<section>
+   <h4> <i class="icon-time"></i> <%= post.time.day %></h4>
+     
+</section>
+<section>
+      
+        <ul class="nav nav-tabs  nav-stacked">
+           <% post.tags.forEach(function(tag, index){ %>
+             <i class="icon-tags"></i><a href="/tags/#<%= tag %>"><li>
+             <span class="label s" style="margin-left:20px; padding:4px 10px;">
+                <%= tag %>
+             </span></li></a>
+            <% }) %>
+        </ul>
+    </section>
+     
+</aside>
+<%- include footer %>
